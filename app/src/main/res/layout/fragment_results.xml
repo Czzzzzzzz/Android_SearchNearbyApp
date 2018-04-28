@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/common_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyword"/>
+
+    <TextView
+        android:id="@+id/error_msg_keyword"
+        android:textColor="@color/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/error_manatory_field"/>
+
+    <EditText
+        android:id="@+id/et_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter keyword"
+        android:text=""
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"/>
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/category_items"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radius"/>
+
+    <EditText
+        android:id="@+id/et_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Distance (default 10 miles)"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_current_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radio_specified_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other. Specify location" />
+
+        <TextView
+            android:id="@+id/error_msg_location"
+            android:textColor="@color/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_manatory_field"
+            android:visibility="gone"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/et_specified_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type in the location"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">SearchNearbyApp</string>
+
+    <!--results activity-->
+    <string name="keyword">keyword</string>
+    <string name="category">category</string>
+    <string-array name="category_items">
+        <item>Default</item>
+        <item>Airport</item>
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Bakery</item>
+        <item>Bar</item>
+        <item>Beauty Salon</item>
+        <item>Bowling Alley</item>
+        <item>Bus Station</item>
+        <item>Cafe</item>
+        <item>Campground</item>
+        <item>Car Rental</item>
+        <item>Casino</item>
+        <item>Lodging</item>
+        <item>Movie Theater</item>
+        <item>Museum</item>
+        <item>Night Club</item>
+        <item>Park</item>
+        <item>Parking</item>
+        <item>Restaurant</item>
+        <item>Shopping Mall</item>
+        <item>Stadium</item>
+        <item>Subway Station</item>
+        <item>Taxi Stand</item>
+        <item>Train Station</item>
+        <item>Transit Station</item>
+        <item>Travel Agency</item>
+        <item>Zoo</item>
+    </string-array>
+    <string name="radius">Distance (in miles)</string>
+    <string name="error_manatory_field">Please enter mandatory filed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <!--<string name="latitude">latitude</string>-->
+    <!--<string name="longitude">longitude</string>-->
+
+    <!--detail activity-->
+    <string-array name="travel_mode">
+        <item>Driving</item>
+        <item>Bicycling</item>
+        <item>Transit</item>
+        <item>Walking</item>
+
+    </string-array>
+
+    <string-array name="review_mode">
+        <item>Google Review</item>
+        <item>Yelp Review</item>
+    </string-array>
+
+    <string-array name="order_method">
+        <item>Default Order</item>
+        <item>Highest Rating</item>
+        <item>Lowerest Rating</item>
+        <item>Most Recent</item>
+        <item>Least Recent</item>
+    </string-array>
+
+</resources>
